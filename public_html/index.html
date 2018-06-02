@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>T Time</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #updateBtn {
+                margin: 0.5em;
+                padding: 0.5em;
+            }
+            
+            #lastUpdateDiv {
+                margin: 0.5em;
+                padding: 0.5em;
+            }
+            
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            
+            th, td {
+                padding: 0.25em;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="updateBtn" onclick="onUpdateBtn()">Update Now</button>
+        <div id="main">
+            <div id="lastUpdateDiv">
+                <div>Last Updated:</div>
+                <div id="lastUpdateTime"></div>
+            </div>
+            <table id="busList">
+                <thead>
+                    <tr><th>Bus</th><th>Estimated Departure</th><th>Schedule Departure</th><th>Stop</th></tr>
+                </thead>
+                <tr><td>72</td><td>7:34PM</td></tr>
+            </table>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
